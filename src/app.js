@@ -34,16 +34,16 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Page details',
-        name: 'Akshay'
+        title: 'About Page',
+        name: 'Saurabh'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-       helpText: 'This is some helpful text',
+       helpText: 'Please contact me at saurabh.stp77@gmail.com for any issues/concerns.',
        title: 'Help Page',
-       name: 'Falak'
+       name: 'Saurabh'
     })
 })
 
