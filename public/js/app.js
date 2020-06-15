@@ -22,7 +22,10 @@ weatherForm.addEventListener('submit', (e) => {
             else
             {
                 messageOne.textContent = data.location
-                messageTwo.textContent = 'It is currently '+data.forecast.summary+ '. The temperature outside is '+data.forecast.temperature+ ' degrees and feels like '+data.forecast.feelslike+ ' degrees.'
+                messageTwo.textContent = 'It is currently '+data.forecast.summary+ '. The temperature outside is '+ 
+                data.forecast.temperature+ ' degrees and feels like '+data.forecast.feelslike+ ' degrees.' + 
+                'The wind speed is ' + data.forecast.windSpeed + 'kmph, the humidity is ' + data.forecast.humidity + 
+                '% and the visibility is ' + data.forecast.visibility + 'km.'
             }
         })
     })
